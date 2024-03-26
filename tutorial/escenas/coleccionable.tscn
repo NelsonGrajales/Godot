@@ -142,7 +142,7 @@ sprite_frames = SubResource("SpriteFrames_g82mx")
 autoplay = "default"
 frame_progress = 0.577649
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_a3g8s")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
