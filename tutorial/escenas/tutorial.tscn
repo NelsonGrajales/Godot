@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b2lpxo3xir4lq"]
+[gd_scene load_steps=10 format=3 uid="uid://b2lpxo3xir4lq"]
 
 [ext_resource type="Texture2D" uid="uid://cwnr10y48ecjl" path="res://Free/Background/Green.png" id="1_e11vy"]
 [ext_resource type="Texture2D" uid="uid://dpin6ndgdeb8o" path="res://Free/Terrain/Terrain (16x16).png" id="2_35n2n"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bqn41y0pll65n" path="res://escenas/coleccionable.tscn" id="4_qhhg3"]
 [ext_resource type="Script" path="res://game_manager.gd" id="5_wwp74"]
 [ext_resource type="PackedScene" uid="uid://bh066cbh8wqsp" path="res://escenas/trofeo.tscn" id="6_hgt5d"]
+[ext_resource type="PackedScene" uid="uid://cgwt1igdcmbx5" path="res://escenas/nivel2.tscn" id="7_8yp2d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dilnb"]
 texture = ExtResource("2_35n2n")
@@ -639,6 +640,7 @@ position = Vector2(680, 426)
 [node name="trofeo" parent="fondo" instance=ExtResource("6_hgt5d")]
 texture_filter = 1
 position = Vector2(2303, 181)
+target_level = ExtResource("7_8yp2d")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

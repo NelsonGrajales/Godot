@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://v5sow8743r5p"]
+
+[ext_resource type="Script" path="res://escenas/menu.gd" id="1_kj0jo"]
+[ext_resource type="Texture2D" uid="uid://b3adc4ctr1gyc" path="res://Free/Background/Blue.png" id="1_mc2fs"]
+[ext_resource type="Texture2D" uid="uid://c6o2ncrataib7" path="res://cooltext454754877192452.png" id="2_bb4kn"]
+
+[node name="Menu" type="Node"]
+script = ExtResource("1_kj0jo")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_mc2fs")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -116.5
+offset_top = -54.5
+offset_right = 116.5
+offset_bottom = 54.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bb4kn")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 239.0
+offset_top = 372.0
+offset_right = 595.0
+offset_bottom = 476.0
+theme_override_font_sizes/font_size = 36
+text = "Levl1"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 676.0
+offset_top = 373.0
+offset_right = 979.0
+offset_bottom = 487.0
+theme_override_font_sizes/font_size = 32
+text = "Level2"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
