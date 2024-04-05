@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://ccthxsxixhurp"]
+[gd_scene load_steps=7 format=3 uid="uid://ccthxsxixhurp"]
 
 [ext_resource type="Texture2D" uid="uid://dxg8bk11cfvvx" path="res://Forest Asset/1. Parallax/0_ Background.png" id="1_pxu6h"]
+[ext_resource type="Texture2D" uid="uid://v0lybpc0e7oj" path="res://Forest Asset/1. Parallax/3_ Trees.png" id="2_7h726"]
 [ext_resource type="Texture2D" uid="uid://bfcip60ob8h7y" path="res://Forest Asset/1. Parallax/5_ Floor Platform.png" id="2_gdo22"]
 [ext_resource type="PackedScene" uid="uid://c2oql4tpxfyuj" path="res://escenas/personaje.tscn" id="3_juj6n"]
 
@@ -400,9 +401,14 @@ scale = Vector2(3, 3)
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 524.0
+offset_bottom = 299.0
 texture = ExtResource("1_pxu6h")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_right = 475.0
+offset_bottom = 323.0
+texture = ExtResource("2_7h726")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
